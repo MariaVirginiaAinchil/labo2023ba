@@ -78,7 +78,7 @@ ArbolesMontecarlo <- function(semillas, param_basicos) {
     semillas, # paso el vector de semillas
     MoreArgs = list(param_basicos), # aqui paso el segundo parametro
     SIMPLIFY = FALSE,
-    mc.cores = 1
+    mc.cores = 5
   ) # se puede subir a 5 si posee Linux o Mac OS
 
   ganancia_promedio <- mean(unlist(ganancias))
@@ -120,8 +120,10 @@ cat(
 
 # itero por los loops anidados para cada hiperparametro
 
-for (vmax_depth in c(4, 6, 8, 10, 12, 14)) {
-  for (vmin_split in c(1000, 800, 600, 400, 200, 100, 50, 20, 10)) {
+for (vcp in c(-0.5, -0.1, 0.5)) {
+  for (vmax_depth in c(4, 6, 8, 10, 12, 14)) {
+    for (vmin_split in c(36, 72, 108, 144, 180,212)){
+      for (vmin_bucket in c(3,6,9,12,15,18)){
     # notar como se agrega
 
     # vminsplit  minima cantidad de registros en un nodo para hacer el split
@@ -144,5 +146,7 @@ for (vmax_depth in c(4, 6, 8, 10, 12, 14)) {
       vmin_split, "\t",
       ganancia_promedio, "\n"
     )
+      }
+    }
   }
 }
