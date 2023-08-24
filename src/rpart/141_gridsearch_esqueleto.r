@@ -148,7 +148,7 @@ for (vcp in c(-0.5, -0.1, 0.5)) {
       vmax_depth, "\t",
       vmin_split, "\t",
       vmin_bucket, "\t",
-      vganancia_promedio, "\n"
+      ganancia_promedio, "\n"
     )
       }
     }
