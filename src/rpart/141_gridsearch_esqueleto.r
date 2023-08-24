@@ -112,8 +112,10 @@ archivo_salida <- "./exp/HT2020/gridsearch.txt"
 cat(
   file = archivo_salida,
   sep = "",
+  "cp", "\t",
   "max_depth", "\t",
   "min_split", "\t",
+  "min_bucket", "\t",
   "ganancia_promedio", "\n"
 )
 
@@ -142,9 +144,11 @@ for (vcp in c(-0.5, -0.1, 0.5)) {
       file = archivo_salida,
       append = TRUE,
       sep = "",
+      vcp, "\t",
       vmax_depth, "\t",
       vmin_split, "\t",
-      ganancia_promedio, "\n"
+      vmin_bucket, "\t",
+      vganancia_promedio, "\n"
     )
       }
     }
