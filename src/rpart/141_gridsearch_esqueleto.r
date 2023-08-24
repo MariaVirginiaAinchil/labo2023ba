@@ -122,7 +122,7 @@ cat(
 
 # itero por los loops anidados para cada hiperparametro
 
-for (vcp in c(-0.5, -0.1, 0.5)) {
+for (vcp in c(-0.5, -0.1, 0.3)) {
   for (vmax_depth in c(4, 6, 8, 10, 12, 14)) {
     for (vmin_split in c(36, 72, 108, 144, 180,212)){
       for (vmin_bucket in c(3,6,9,12,15,18)){
