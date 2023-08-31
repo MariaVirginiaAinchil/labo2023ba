@@ -19,7 +19,7 @@ PARAM$semilla <- 100207
 # parameetros rpart
 PARAM$rpart_param <- list(
   "cp" = -1,
-  "minsplit" = 1000
+  "minsplit" = 1000,
   "minbucket" = 20,
   "maxdepth" = 8
 )
