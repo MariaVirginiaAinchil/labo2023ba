@@ -1,14 +1,14 @@
 # Experimentos Colaborativos Default
 # Workflow  Catastrophe Analysis
 
-# limpio la memoria
+# limpieza de la memoria
 rm(list = ls(all.names = TRUE)) # remove all objects
 gc(full = TRUE) # garbage collection
 
 require("data.table")
 require("yaml")
 
-# Parametros del script
+# Parametros del script 
 PARAM <- list()
 PARAM$experimento <- "CA6110_008_3ms"
 PARAM$dataset <- "./datasets/competencia_2023.csv.gz"
