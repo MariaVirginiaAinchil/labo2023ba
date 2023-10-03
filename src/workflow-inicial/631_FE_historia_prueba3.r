@@ -53,7 +53,7 @@ PARAM$RandomForest$semilla <- 100207 #  propia semilla
 
 
 # varia de 0.0 a 2.0, si es 0.0 NO se activan
-PARAM$CanaritosAsesinos$ratio <- 1
+PARAM$CanaritosAsesinos$ratio <- 2
 # desvios estandar de la media, para el cutoff
 PARAM$CanaritosAsesinos$desvios <- 0.5
 # cambiar por la propia semilla
